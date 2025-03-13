@@ -77,12 +77,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "embassy"
-version = "0.0.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "902e14c8b21b6f56f8d21a1c5de34aa3423acc61b136e47ec591d0758c3e77be"
-
-[[package]]
 name = "embassy-executor"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -136,7 +130,6 @@ version = "0.1.0"
 dependencies = [
  "cfg-if",
  "critical-section",
- "embassy",
  "embassy-executor",
  "embassy-time",
  "embassy-time-driver",

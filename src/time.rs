@@ -50,7 +50,7 @@ impl Driver for UefiTimeDriver {
     }
 }
 
-unsafe extern "efiapi" fn notify(event: Event, context: Option<NonNull<c_void>>) {
+unsafe extern "efiapi" fn notify(_event: Event, context: Option<NonNull<c_void>>) {
     let ctx = unsafe {
         context
             .expect("got non-null context")
