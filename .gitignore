@@ -1,0 +1,9 @@
+target
+result*
+.direnv
+
+testesp
+esp
+*.iso
+*.fd
+*.log

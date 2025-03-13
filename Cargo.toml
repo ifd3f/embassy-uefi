@@ -1,0 +1,23 @@
+[package]
+name = "embassy-uefi"
+version = "0.1.0"
+description = "Utilities for running embassy inside a UEFI environment"
+authors = ["Astrid Yu <astrid@astrid.tech>"]
+keywords = ["network", "uefi"]
+license = "MIT"
+repository = "https://github.com/ifd3f/embassy-uefi"
+edition = "2024"
+
+[dependencies]
+cfg-if = "1.0.0"
+embassy-time = { version = "0.4.0", features = ["std"] }
+embassy-time-driver = "0.2.0"
+spin = "0.9.8"
+uefi = { version = "0.34.1", default-features = false }
+
+[dev-dependencies]
+embassy = "0.0.0"
+embassy-executor = { version = "0.7.0", features = ["arch-spin", "executor-thread"] }
+log = "0.4.26"
+static_cell = "2.1.0"
+uefi = { version = "0.34.1", features = ["alloc", "logger", "unstable"] }
