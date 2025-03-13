@@ -1,2 +1,3 @@
 #![no_std]
-pub mod time;
+
+mod time;

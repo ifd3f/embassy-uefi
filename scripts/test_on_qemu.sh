@@ -13,7 +13,7 @@
 
 set -euxo pipefail
 
-example=ping
+example=fizzbuzz
 
 # set up an esp as a VVFAT directory
 cargo build --example "$example" --target x86_64-unknown-uefi --release
